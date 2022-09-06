@@ -27,7 +27,7 @@ public class BillResponse {
             @JsonProperty(value = "billId", required = true) String billId,
             @JsonProperty(value = "amount", required = true) MoneyAmount amount,
             @JsonProperty(value = "status", required = true) ResponseStatus status,
-            @JsonProperty(value = "comment", required = true) String comment,
+            @JsonProperty(value = "comment", required = false) String comment,
             @JsonProperty(value = "customer", required = true) Customer customer,
             @JsonProperty(value = "creationDateTime", required = true) ZonedDateTime creationDateTime,
             @JsonProperty(value = "expirationDateTime", required = true) ZonedDateTime expirationDateTime,
